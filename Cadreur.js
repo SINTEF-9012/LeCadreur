@@ -93,8 +93,6 @@ function Cadreur(rootNode, direction)
 		if (!obj.front && obj.drag_enabled && obj.dragged_box === null) {
 			convertTouchEvent(e);
 
-			obj.hover(e.pageX-containerPosition.left, e.pageY-containerPosition.top);
-
 			// Recovery of the dragged box
 			var jdragged_box = $(this);
 			jdragged_box.addClass('dragged');
